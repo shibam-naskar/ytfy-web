@@ -2,11 +2,17 @@
   "name": "ytfy",
   "version": "0.1.0",
   "private": true,
+  "bin": {
+    "my-command": "executable.js"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "pkg": {
+    "scripts": "build/server/pages/_app.js"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
@@ -16,6 +22,7 @@
     "google-img-scrap": "^1.1.1",
     "next": "14.0.1",
     "node-youtube-music": "^0.10.3",
+    "play-dl": "^1.9.7",
     "react": "^18",
     "react-dom": "^18",
     "youtube-dl-exec": "^2.4.17",

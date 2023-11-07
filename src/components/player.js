@@ -21,11 +21,12 @@ function MusicPlayer() {
     async function getStream(vid) {
         playSong(vid)
         Setstream("")
-        var data = await fetch(`/api/songs/getstream/${vid.youtubeId}`)
+        var data = await fetch(`http://127.0.0.1:2702/api/mp3/${vid.youtubeId}`)
             .then(data => data.json())
             .then(data1 => {
+                console.log("stream url")
                 console.log(data1)
-                Setstream(data1)
+                Setstream(data1.url)
                 // Setsongs(data1)
                 // handlePlaySong(null)
                 // handlePlaySong(song)

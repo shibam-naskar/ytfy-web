@@ -6,6 +6,7 @@ import { writeToLocalStorage,writeLocalstoragefavourites,readFromLocalStorage } 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faHeart } from '@fortawesome/free-solid-svg-icons';
 
+
 function SearchPage({ params }) {
     const { currentSong, playSong,addQueue,setIndexp } = useMusicStore();
 
